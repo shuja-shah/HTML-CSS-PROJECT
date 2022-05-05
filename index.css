@@ -65,3 +65,21 @@ p{
     color: hsl(var(--clr-dark));
     font-size: var(--fs-800);
 }
+
+h1,
+p{
+    color: hsl(var(--clr-dark));
+    font-size: var(--fs-800);
+}
+
+h2
+{
+    color: yellow;
+    font-size: var(--fs-600);
+    text-align: center;
+    text-decoration: underline;
+}
+
+#project-grid{
+
+}

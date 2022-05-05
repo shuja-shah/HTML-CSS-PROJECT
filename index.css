@@ -3,6 +3,7 @@
     --clr-dark: 230 35% 7%;
     --clr-light: 231 77% 90%;
     --clr-white: 0 0% 100%;
+   
     
     /* font-sizes */
     --fs-900: 9.375rem;
@@ -14,4 +15,38 @@
     --fs-300: 1rem;
     --fs-200: 0.875rem;
 }
+.navigation{
+    height: 65px;
+    position: relative;
+    background-color: hsl(var(--clr-dark));
+}
+#home{
+ 
+   height: 25px;
+   padding: 20px;
+   position: absolute;
+   left: 65%;
+   font-weight: 600;
+   font-size:var(--fs-500)
+   color:hsl(var(--clr-light))
+}
+#work{
 
+    height: 25px;
+    padding: 20px;
+    position: absolute;
+    left: 75%;
+    font-weight: 600;
+    font-size:var(--fs-500)
+    color:hsl(var(--clr-light))
+}
+#contact{
+    
+    height: 25px;
+    padding: 20px;
+    position: absolute;
+    left: 85%;
+    font-weight: 600;
+    font-size:var(--fs-500)
+    color:hsl(var(--clr-light))
+}

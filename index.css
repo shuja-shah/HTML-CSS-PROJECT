@@ -3,7 +3,11 @@
     --clr-dark: 230 35% 7%;
     --clr-light: 231 77% 90%;
     --clr-white: 0 0% 100%;
-    --clr-gold:235 216% 212%;
+    --clr-gold: 235 216% 212%;
+    --clr-RoseGold: 351 34% 57%;
+    --clr-White-Gold: 31 25% 65%;
+    --clr-vintage-Red:4 66% 28%;
+    --clr-wood-Brown:42 37% 41%;
     
     /* font-sizes */
     --fs-900: 9.375rem;
@@ -54,16 +58,50 @@ body{
     color:hsl(var(--clr-light))
 }
 .one-section{
-    height: 800px;
+    height: 700px;
     width: 100%;
     background-color: hsl(var(--clr-gold));
+    position: relative;
     display: grid;
-    justify-items: center;
 }
-h1,
-p{
-    color: hsl(var(--clr-dark));
-    font-size: var(--fs-800);
+h1
+{
+    /*font-size: 72px;
+    background: -webkit-linear-gradient(hsl(var(--clr-RoseGold)),hsl(27, 100%, 87%));
+    -webkit-background-clip: text; YUKH THESE COLORS SUCKS
+    -webkit-text-fill-color: transparent;
+  }*/
+    color:hsl(var(--clr-wood-Brown));
+    font-size: var(--fs-700);
+    font-family: 'Hind', sans-serif;
+    font-weight:600;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+h2{
+    position: relative;
+    font-size: var(--fs-700);
+    font-family: 'Source Sans Pro', monospace;
+    font-weight: 800;
+    color:hsl(var(--clr-vintage-Red));
+    margin: 37% 0 0 28%;
+}
+h2::before,
+h2::after{
+    content: '';
+    position:absolute;
+    top:0%;
+    left:0%;
+    bottom:0%;
+    right:0%;
+}
+h2::before{
+    background: hsl(var(--clr-gold));
+    animation: typewriter 3s steps(25) infinite;
 }
 
-
+@keyframes typewriter {
+    to {left: 100%;}
+}

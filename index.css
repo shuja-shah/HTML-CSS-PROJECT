@@ -24,45 +24,66 @@ body{
 }
 .navigation{
     height: 65px;
-    position: relative;
+    display:grid;
     background-color: hsl(var(--clr-dark));
+    grid-template-columns: 1fr,1fr,1fr,1fr;
+    
 }
 #home{
  
-   height: 25px;
-   padding: 20px;
-   position: absolute;
-   left: 65%;
-   font-weight: 600;
-   font-size:var(--fs-500)
-   color:hsl(var(--clr-light))
+   font-weight: 400;
+   font-size:var(--fs-500);
+   font-style: none;
+   text-decoration: none;
+   color:hsl(var(--clr-light));
+   grid-column-start: 2;
+   letter-spacing: 5px;
+
 }
 #work{
-
-    height: 25px;
-    padding: 20px;
-    position: absolute;
-    left: 75%;
-    font-weight: 600;
-    font-size:var(--fs-500)
-    color:hsl(var(--clr-light))
+    font-weight: 400;
+    font-size:var(--fs-500);
+    color:hsl(var(--clr-light));
+    font-style:none;
+    text-decoration:none;
+    grid-column-start: 3 ;
+    letter-spacing: 5px;
 }
 #contact{
-    
-    height: 25px;
-    padding: 20px;
-    position: absolute;
-    left: 85%;
-    font-weight: 600;
-    font-size:var(--fs-500)
-    color:hsl(var(--clr-light))
+
+    font-weight: 400;
+    font-size:var(--fs-500);
+    color:hsl(var(--clr-light));
+    font-style:none;
+    text-decoration: none;
+    grid-column-start: 4;
+    letter-spacing: 5px;
+}
+#contact:hover{
+    background-color: aliceblue;
+    color: hsl(var(--clr-dark));
+}
+
+#work:hover{
+    background-color: aliceblue;
+    color: hsl(var(--clr-dark));
+}
+#home:hover{
+    background-color: aliceblue;
+    color: hsl(var(--clr-dark));
+}
+.logo{
+    color: hsl(var(--clr-light));
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 5px;
+    font-size: var(--fs-500);
+
 }
 .one-section{
     height: 700px;
     width: 100%;
-    background-color: hsl(var(--clr-gold));
-    position: relative;
     display: grid;
+    
 }
 h1
 {
@@ -83,10 +104,11 @@ h1
 h2{
     position: relative;
     font-size: var(--fs-700);
-    font-family: 'Source Sans Pro', monospace;
+    font-family: 'Hind', sans-serif;
+    letter-spacing: 5px;
     font-weight: 800;
     color:hsl(var(--clr-vintage-Red));
-    margin: 37% 0 0 28%;
+    margin: 28% 0 0 24%;
 }
 h2::before,
 h2::after{
@@ -98,8 +120,8 @@ h2::after{
     right:0%;
 }
 h2::before{
-    background: hsl(var(--clr-gold));
-    animation: typewriter 3s steps(25) infinite;
+    background: hsl(var(--clr-dark));
+    animation: typewriter 4s steps(25) infinite;
 }
 
 @keyframes typewriter {

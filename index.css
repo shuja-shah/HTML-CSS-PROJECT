@@ -142,7 +142,7 @@ h3{
 }
 #project-grid{
     display: grid;
-    grid-gap: 50px;
+    grid-gap: 30px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     

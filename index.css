@@ -8,6 +8,7 @@
     --clr-White-Gold: 31 25% 65%;
     --clr-vintage-Red:4 66% 28%;
     --clr-wood-Brown:42 37% 41%;
+    --clr-green:145, 63%, 49%;
     
     /* font-sizes */
     --fs-900: 9.375rem;
@@ -194,4 +195,103 @@ h3{
     background-size: cover;
     padding: 10rem 0 0;
 
+}
+.button1{
+    background-color: hsl(var(--clr-dark));
+    color: hsl(var(--clr-light));
+    font-size: var(--fs-500);
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 5px;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 0.5rem 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    
+}
+.button1:hover{
+    background-color: hsl(var(--clr-green));
+    color: hsl(var(--clr-dark));
+}
+/* create a button for .Sbutton*/
+.Sbutton{
+    background-color: hsl(var(--clr-dark));
+    color: hsl(var(--clr-light));
+    font-size: var(--fs-500);
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 5px;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 0.5rem 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    
+}
+.Sbutton:hover{
+    background-color: hsl(var(--clr-green));
+    color: hsl(var(--clr-dark));
+}
+/* create a button for .Tbutton*/
+.Tbutton{
+    background-color: hsl(var(--clr-dark));
+    color: hsl(var(--clr-light));
+    font-size: var(--fs-500);
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 5px;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 0.5rem 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    
+}
+.Tbutton:hover{
+    background-color: hsl(var(--clr-green));
+    color: hsl(var(--clr-dark));
+}
+#lol{
+    /*set the height of this section to the height of the window*/
+    height: 100vh;
+    /*set the background color of this section to the color of the variable --clr-vintage-red*/
+    background-color: hsl(var(--clr-vintage-Red));
+    /*set the color of the text to the White*/
+    color: hsl(var(--clr-light));
+    /*set the font size of the text to the variable --fs-500*/
+    font-size: var(--fs-500);
+    /*set the font family of the text to the font family of the variable --font-family-sans-serif*/
+    font-family: 'Source Sans Pro', sans-serif;
+    /*set the font weight of the text to the variable --fw-500*/
+    font-weight: 500;
+    /*set the letter spacing of the text to the variable --ls-5*/
+    letter-spacing: 5px;
+    /*set the width of this section to window width*/   
+    width: 100%;
+    /*make this section the grid container*/
+    display: grid;
+    /*set the grid template columns to repeat the width of the window*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /*set the grid template rows to repeat the height of the window*/
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    /*set the grid gap to the variable --gap-30*/
+    grid-gap: var(--gap-30);
+    /*postion the first child of this grid to the center of the grid */
+    
 }
